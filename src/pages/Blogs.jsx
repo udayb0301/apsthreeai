@@ -3,7 +3,7 @@ import React from 'react'
 const Blogs = () => {
   return (
     <>
-      <div>Blogs</div>
+      <div>Blog</div>
       <div>
         <img src="./src/assets/blog.png" alt="" />
       </div>
