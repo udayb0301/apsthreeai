@@ -51,7 +51,7 @@ const Footer = () => {
           <a href="/pricing" className="hover:underline">
             Pricing
           </a>
-          <a href="blog" className="hover:underline">
+          <a href="/blogs" className="hover:underline">
             Blogs
           </a>
         </div>
@@ -73,9 +73,9 @@ const Footer = () => {
       </div>
 
       {/* Social Media Links */}
-      <div className="flex flex-col lg:flex-row justify-between items-center mt-10 border-t border-gray-700 pt-5 space-y-5 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row justify-between  mt-10 border-t border-gray-700 pt-5 space-y-5 lg:space-y-0">
         <div className="flex space-x-4">
-          <a href="#" className="border-2 border-white rounded-full p-2">
+          <a href="#" className="border-2 border-white rounded-full p-2 ">
             <FaLinkedinIn className="h-4 w-auto" />
           </a>
           <a href="#" className="border-2 border-white rounded-full p-2">
@@ -84,17 +84,18 @@ const Footer = () => {
         </div>
 
         {/* Privacy Links */}
-        <div className="flex space-x-10 justify-between items-center">
-          <a href="#" className="underline px-6 ml-40">
+        <div className="flex flex-col items-start space-y-4 lg:space-y-0 lg:flex-row lg:space-x-10">
+          {/* <div className="flex space-x-10 justify-between items-center "> */}
+          <a href="#" className="underline lg:ml-40 sm: py-2">
             Privacy Statement
           </a>
-          <a href="#" className="underline">
+          <a href="#" className="underline sm: py-2">
             Terms & Condition
           </a>
         </div>
 
         {/* Bottom Section */}
-        <div className="text-sm text-center lg:text-right">
+        <div className="text-sm text-left  lg:text-right sm: py-2">
           <p>
             &copy; 2024, made with by APS THREEAI LLP, Inc. All rights reserved
           </p>

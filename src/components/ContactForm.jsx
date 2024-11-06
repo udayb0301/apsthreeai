@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import { IoIosCall } from "react-icons/io";
+import { IoMailSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ContactFormWithImage = () => {
   const [formData, setFormData] = useState({
@@ -28,11 +30,6 @@ const ContactFormWithImage = () => {
         <div className="max-w-7xl w-full  bg-white  shadow-lg overflow-hidden md:flex rounded-[24px]">
           {/* Left Side - Contact Form */}
           <div className=" md:w-1/2 px-20 py-20 mt-8 ">
-            {/* <h2 className="text-2xl font-semibold text-gray-800">Contact Us</h2>
-            <p className="text-gray-500 mb-6">
-              Fill out this form for trying out free demo
-            </p> */}
-
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -47,7 +44,9 @@ const ContactFormWithImage = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 space-x-8">Last name</label>
+                  <label className="block text-gray-700 space-x-8">
+                    Last name
+                  </label>
                   <input
                     type="text"
                     name="lastName"
@@ -83,13 +82,13 @@ const ContactFormWithImage = () => {
               </div>
 
               <div className="mt-4">
-                <label className="block text-gray-700">Message</label>
+                <label className="block text-gray-700 ">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
-                  rows="4"
+                  className="w-full mt-1 p-4  border border-gray-300 rounded-lg resize-none "
+                  rows="2"
                 ></textarea>
               </div>
 
@@ -102,68 +101,55 @@ const ContactFormWithImage = () => {
             </form>
           </div>
 
+          
           {/* Right Side - Contact Us Image */}
-          <div className="w-full md:w-1/2 bg-gradient-to-br from-blue-700 to-blue-900 text-white p-8 m-10 flex flex-col justify-center rounded-[24px]">
-            <h2 className="text-3xl font-semibold mb-2">Get Connected</h2>
-            <p className="text-xl mb-6">Contact Us</p>
-            <p className="text-lg">
+          <div className="w-full max-w-lg md:w-1/2 bg-gradient-to-br from-blue-700 to-blue-900 text-white p-8  m-16 flex flex-col justify-center rounded-[24px]  mx-auto">
+
+            <p className="flex items-center mx-2 my-2 mt-22 text-yellow-300">
+              <span className="pr-2">
+                <IoIosCall />
+              </span>
+              Get Connected
+            </p>
+
+            <p className="text-4xl mx-3 mt-3 sm:text-4xl  font-bold">
+              Contact Us
+            </p>
+            <p className="text-sm mx-4 mt-2 sm:text-sm">
               Fill out this form for trying out a free demo
             </p>
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-20 mx-3 space-y-4">
+              {/* Phone Number */}
               <div className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 8l7.89 5.26a1 1 0 001.12 0L21 8m0 0a11.05 11.05 0 01-9 5c-4.47 0-8.42-2.61-9-5m9 5v5m-3-5h3v5h3m3 0v5m-6-5a11.05 11.05 0 019-5c4.47 0 8.42 2.61 9 5M3 8h3v10m-3 0v2a10.97 10.97 0 009 5c4.47 0 8.42-2.61 9-5m0 0v-2m-9 5v5m-3-5h3v5"
-                  />
-                </svg>
-                <span>+916356561125</span>
+                <p className="flex items-center mx-2 my-2 ">
+                  <span className="pr-6">
+                    <IoIosCall />
+                  </span>
+                  +916356561125
+                </p>
               </div>
+
+              {/* Email */}
+
               <div className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 11V7a4 4 0 10-8 0v4m5 0v-4m5 0v4m0 0v6a4 4 0 01-8 0v-6m8 0H5"
-                  />
-                </svg>
-                <span>admin@apsthreeai.ai</span>
+                <p className="flex items-center mx-2 my-2 ">
+                  <span className="pr-6">
+                    <IoMailSharp />
+                  </span>
+                  admin@apsthreeai.ai
+                </p>
               </div>
+
+              {/* Address */}
               <div className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8h4m0 0v4m0-4l-4 4m0-4l-4 4m-4 0H7m4 4H7v-4h4l-4-4m12 4V8m0 0L17 4M7 8v4H4V8h3zm0 4l-4 4m4 4v-4m0 4l4-4"
-                  />
-                </svg>
-                <span>
+                <p className="flex items-center mx-2  my-2">
+                  <span className="text-sm sm:text-base pr-6">
+                    <FaLocationDot />
+                  </span>
                   H-203, Shukan Platinum Appt, Opp. Satyam Hospital, Nr.
                   Vandemataram City, Ahmedabad, Gujarat, India - 382481
-                </span>
+                </p>
               </div>
             </div>
           </div>
