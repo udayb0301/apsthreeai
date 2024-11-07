@@ -4,7 +4,7 @@ import { FiDollarSign } from "react-icons/fi";
 
 function PricingPlans() {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-slate-200 py-12">
       {/* Container for the Top Section */}
       <div className="container mx-auto px-4 md:px-8 lg:px-16 rounded-xl">
         <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center md:justify-between mb-8">
@@ -19,15 +19,6 @@ function PricingPlans() {
 
           {/* Text Content on the Right */}
           <div className="md:w-1/2 text-center md:text-left mr-24">
-            {/* <p>
-              <span className="text-blue-600">
-                <FiDollarSign />
-              </span>
-              <h2 className="text-blue-600 font-semibold mb-14 pt-4">
-                Pricing Plans
-              </h2>
-            </p> */}
-
             <div className="flex items-center space-x-2">
               <h2 className="flex items-center  my-2 text-blue-600 ">
                 <span className="pr-2">
