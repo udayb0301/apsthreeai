@@ -110,7 +110,6 @@ function ERPFeatures() {
 
       {/* Fifth Part */}
       <div className="min-h-screen p-4 md:p-12">
-        {/* Heading */}
         <h1 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           Explore More Powerful Features for Enhanced Business Efficiency
         </h1>
