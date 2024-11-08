@@ -304,7 +304,7 @@ const Blogs = () => {
               </div>
 
               {/* Image 2 */}
-              <div className="rounded-lg overflow-hidden ">
+              <div className="rounded-lg overflow-hidden">
                 <img
                   src="./src/assets/blog-image4.png"
                   alt="Blog Insight 2"
@@ -313,7 +313,7 @@ const Blogs = () => {
               </div>
 
               {/* Image 3 */}
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden">
                 <img
                   src="./src/assets/blog-image4.png"
                   alt="Blog Insight 3"

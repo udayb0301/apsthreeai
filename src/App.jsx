@@ -14,9 +14,10 @@ function App() {
   return (
     <Router>
       <div className="w-full h-full absolute bg-slate-200 ">
-        {/* <header className="flex justify-between items-center text-black py-6 px-8 md:px-32 bg-white drop-shadow-md"></header> */}
         <Navbar />
         <Routes>
+          {/* Making the Home page the default route (root path) so when the user firsts open the website it will start from the home page */}
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/pricing" element={<Pricing />} />

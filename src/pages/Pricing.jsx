@@ -18,19 +18,19 @@ function PricingPlans() {
           </div>
 
           {/* Text Content on the Right */}
-          <div className="md:w-1/2 text-center md:text-left mr-24">
-            <div className="flex items-center space-x-2">
-              <h2 className="flex items-center  my-2 text-blue-600 ">
+          <div className="w-full md:w-1/2 text-center md:text-left md:mr-24 px-4 md:px-0">
+            <div className="flex items-center justify-center md:justify-start space-x-2">
+              <h2 className="flex items-center my-2 text-blue-600 text-lg md:text-xl">
                 <span className="pr-2">
                   <FiDollarSign />
                 </span>
-               Pricing Plans
+                Pricing Plans
               </h2>
             </div>
-            <h1 className="text-2xl md:text-3xl font-bold mb-8 text-[#16184C] pt-4">
+            <h1 className="text-xl md:text-3xl font-bold mb-4 md:mb-8 text-[#16184C] pt-4">
               Choose the Right Plan for Seamless Healthcare Management
             </h1>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 mb-6 md:mb-8 text-sm md:text-base">
               Streamline healthcare with plans optimized for patient management,
               pharmacy inventory, and doctor coordination—ensuring efficiency
               for all stakeholders.
